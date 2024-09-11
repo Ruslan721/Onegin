@@ -14,11 +14,17 @@ int main()
 
 void Onegin_Manager()
 {
-    int ch;
+    char ch = 0;
+
+    fgets(ch, 5, Head_and_shoulders);
+
+    fputs(ch, inp);
+
+    /*int ch;
 
     FILE * fp;
 
-    fp = fopen(Head_and_shoulders.txt, "r");
+    fp = fopen(Head_and_shoulders.txt , "r");
     assert(fp != NULL);
 
     while ((ch = getc(fp)) != EOF)
@@ -26,5 +32,5 @@ void Onegin_Manager()
         putchar(ch);
     }
 
-    fclose(fp);
+    fclose(fp);  */
 }
